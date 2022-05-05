@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14pt;
+    background-color: black;
+    color: #fff;
+
+}
+
+.navbar-scroll {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(61, 0, 58, 0.500), rgba(87, 0, 83, 0.400), rgba(61, 0, 58, 0.300), rgba(61, 0, 58, 0.200), rgba(61, 0, 58, 0));
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    transition: .2s;
+}
+
+.title-navbar {
+    justify-self: start;
+    color: rgb(150, 217, 243);
+    text-decoration: none;
+    font-size: 24pt;
+    font: bolder;
+    text-shadow: 10px 10px 10px rgb(108, 180, 221);
+    font-family: 'Goldman', cursive;
+}
+
+
+.item-list {
+    display: inline-block;
+    padding: 10px;
+}
+
+.item-list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.item-list a:hover {
+    color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+.active:hover {
+    color: #fff;
+}
+
+/* conteiners */
+
+
+.container {
+    padding: 5px 10px;
+    margin-left: 40px;
+}
+
+
+/* cartaz */
+
+.hot-filme {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/img/TOP.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 10%;
+    z-index: 0;
+}
+
+.container-cartaz {
+    margin-right: 50%;
+    margin-left: 40px;
+}
+
+.container-cartaz h3 {
+    font-size: 24pt;
+}
+
+.container-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-cartaz {
+    display: flex;
+    align-content: center;
+    width: auto;
+    padding: 10px 20px;
+    font-size: 14pt;
+    color: #fff;
+    background-color: rgba(43, 41, 41, 0.233);
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    box-shadow: 1px 1px 10px black;
+    margin-right: 10px;
+    transition: 1s;
+}
+
+.material-symbols-outlined {
+    margin-right: 10px;
+}
+
+
+
+.btn-cartaz:hover {
+    cursor: pointer;
+    background: rgb(85, 5, 92);
+}
+
+/* main */
+
+.corpo-page {
+    margin-top: -40vh;
+    z-index: 2;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+    padding: 20px 5px;
+    background-color: rgb(17, 16, 16);
+}
+
+.item-footer ul{
+    list-style: none;
+}
+
+.item-footer ul li{
+    padding: 10px;
+}
+
+.item-footer ul li a{
+    text-decoration: none;
+    color: rgb(156, 235, 202);
+}
+
+.item-footer ul li a:hover{
+    color: blueviolet;
+}
+
+.myWeb{
+    color: rgb(156, 235, 202);
+    text-decoration: none;
+}
+.myWeb:hover{
+    color: blueviolet;
+}
+
+.align-center{
+    align-self: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 890px) {
+    .hot-filme{
+        margin-bottom: 10%;
+    }
+    .title-navbar {
+        font-size: 16pt;
+    }
+
+    .item-list {
+        padding: 5px;
+    }
+
+    .item-list a{
+        font-size: 8pt;
+    }
+
+    .container {
+        padding: 5px 10px;
+        margin-left: 5px;
+    }
+
+    .container-cartaz {
+        margin-right: 10%;
+        margin-left: 10px;
+    }
+
+    .container-cartaz h3 {
+        font-size: 14pt;
+    }
+
+    .descricao-hot{
+        font-size: 8pt;
+    }
+
+    .corpo-page {
+        margin-top: -80vh;
+        padding-top: 0;
+    }
+
+    .btn-cartaz{
+        padding: 5px 10px;
+    } 
+
+    .material-symbols-outlined{
+        align-self: center;
+    }
+
+    .txt-btn{
+        display: flex;
+        font-size: 10pt;
+        align-self: center;
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
