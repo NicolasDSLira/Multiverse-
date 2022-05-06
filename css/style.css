@@ -104,6 +104,7 @@ body {
     box-shadow: 1px 1px 10px black;
     margin-right: 10px;
     transition: 1s;
+ 
 }
 
 .material-symbols-outlined {
@@ -167,13 +168,14 @@ body {
 @media screen and (max-width: 890px) {
     .hot-filme{
         margin-bottom: 10%;
+        background-size: 120%;
     }
     .title-navbar {
-        font-size: 16pt;
+        font-size: 14pt;
     }
 
     .item-list {
-        padding: 5px;
+        padding: 0px;
     }
 
     .item-list a{
@@ -199,7 +201,7 @@ body {
     }
 
     .corpo-page {
-        margin-top: -80vh;
+        margin-top: -75vh;
         padding-top: 0;
     }
 
@@ -219,8 +221,11 @@ body {
 
     .footer{
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
+        font-size: 10pt;
+    }
+
+    .item-footer{
+       margin: 0px 50px;
         text-align: center;
     }
 }
